@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header{
+	display: flex;
+	margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+nav{
+	align-self: flex-end;
+	margin-left: 60px;
+}
+nav a{
+	margin-right: 60px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #222;
+  transition: color .4s;
+}
+nav a:hover{
+  color: #777;
+}
+header + img{
+	margin-bottom: 20px;
+}
+
+.main-content{
+  display: flex;
+}
+
+.top{
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.top h1, .right h1{
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #111;
+}
+.top p a{
+  margin-left: 5px;
+  text-decoration: none;
+  color: #222;
+  transition: color 0.4s;
+}
+.top p a:hover{
+  color: #777;
+}
+
+.bottom input{
+  border:1px solid #DDD;
+  outline:none;
+  display:inline-block;
+  height:40px;
+  vertical-align:middle;
+  position:relative;
+  border-radius:22px;
+  width:220px;
+  padding:0 18px;
+}
+.bottom input:nth-child(1){
+  margin-right: 10px;
+}
+.bottom input:nth-child(3){
+  display: block;
+  width: 455px;
+  margin: 20px 0;
+}
+.bottom select{
+  border: 1px solid #DDDDDD;
+  border-radius: 20px;
+  height: 40px;
+  width: 210px;
+  margin-left: 20px;
+}
+.bottom textarea{
+  margin: 20px 0;
+  border-radius: 10px;
+  padding: 10px ;
+  resize: none;
+}
+.bottom input[type="button"]{
+  border-radius: 1px solid #DDD;
+  display: block;
+  width: 455px;
+  margin: 10px 0 20px 0;
+  font-weight: bold;
+
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+.bottom input[type="button"]:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+.bottom a, .right a{
+  text-decoration: none;
+}
+input[type=text], textarea, input[type="email"], input[type="tel"], select {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.right button{
+  border-radius: 20px;
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: 20px 0;
+  font-weight: bold;
+
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+.right button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+.right a{
+  color: #222;
+}
+.left{
+  width: 480px;
+  margin-right: 40px;
+}
+.right img{
+  width: 150px;
+  height: 150px;
+  margin-top: 75px;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
